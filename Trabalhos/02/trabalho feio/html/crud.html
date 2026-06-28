@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        button {
+            margin-right: 5px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mundo das Telas</div>
+            <ul class="nav-menu">
+                <li><a href="Inicio.html">Início</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="filmes.html">Filmes</a></li>
+                <li><a href="series.html">Séries</a></li>
+                <li><a href="lançamentos.html">Lançamentos</a></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+                <li><a href="crud.html">Gerenciar Logins</a></li>
+                <li><a href="criadores.html">Criadores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Gerenciar Logins</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Email</th>
+                    <th>Senha</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>usuario1</td>
+                    <td>usuario1@gmail.com</td>
+                    <td>******</td>
+                    <td>
+                        <button onclick="editarLogin('usuario1')">Editar</button>
+                        <button onclick="removerLogin('usuario1')">Remover</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>usuario2</td>
+                    <td>usuario2@gmail.com</td>
+                    <td>******</td>
+                    <td>
+                        <button onclick="editarLogin('usuario2')">Editar</button>
+                        <button onclick="removerLogin('usuario2')">Remover</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Mundo das Telas. Todos os direitos reservados.</p>
+            <p>Projeto desenvolvido por Lucas, Miguel e Hudson</p>
+            <ul class="footer-links">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Privacidade</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function editarLogin(usuario) {
+            alert("Função de edição para: " + usuario);
+            // Aqui você pode abrir um modal ou redirecionar para uma página de edição.
+        }
+
+        function removerLogin(usuario) {
+            const confirmacao = confirm("Deseja remover o login de " + usuario + "?");
+            if (confirmacao) {
+                alert("Login removido: " + usuario);
+                // Aqui você poderia remover a linha da tabela ou enviar para backend.
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #0D0D0D;
+        color: #f0f0f0;
+    }
+
+    main {
+        padding: 40px 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #ffffff;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        background-color: #1a1a1a;
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 20px;
+        color: white;
+    }
+
+    thead {
+        background-color: #333;
+        color: white;
+    }
+
+    th {
+        padding: 15px;
+        background-color: #222;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    td {
+        padding: 15px;
+        border-top: 1px solid #444;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #2a2a2a;
+    }
+
+    tbody tr:hover {
+        background-color: #3a3a3a;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        text-align: center;
+    }
+
+    .card img {
+        border-radius: 12px;
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        margin-bottom: 10px;
+    }
+
+    .card h3 {
+        color: #ddd;
+        font-size: 1.1em;
+        margin: 0;
+    }
+
+    .footer {
+        background-color: #111;
+        color: #aaa;
+        padding: 20px;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    .footer-links a {
+        color: #888;
+        text-decoration: none;
+    }
+
+    .footer-links a:hover {
+        color: white;
+    }

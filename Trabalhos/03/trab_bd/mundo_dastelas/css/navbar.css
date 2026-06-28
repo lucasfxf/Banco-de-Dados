@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout base */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #0D0D0D;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+main {
+  flex: 1;
+  padding: 4rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1C1C1C;
+  padding: 1.5rem 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.titulo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #b0070f;
+  letter-spacing: 1px;
+}
+
+/* Menu padrão */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.6rem 1rem;
+  transition: 0.3s;
+}
+
+.nav-menu li a:hover {
+  background-color: #b0070f;
+  border-radius: 5px;
+}
+
+/* Ícone de menu mobile */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Toggle checkbox invisível */
+#menu-toggle {
+  display: none;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1C1C1C;
+  font-size: 0.9rem;
+  color: #808080;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-links li a {
+  color: #A52A2A;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+  color: #ffffff;
+}
+
+.acoes {
+  margin-left: 80px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Botões */
+.botao-branco {
+  background-color: #E50914;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 300px;
+  transition: background 0.3s;
+}
+
+.botao-branco:hover {
+  background-color: #b0070f;
+}
+
+.ou {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  width: 300px;
+  gap: 10px;
+}
+
+.ou hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid white;
+}
+
+.ou span {
+  white-space: nowrap;
+}
